@@ -1,0 +1,38 @@
+@media (max-width:1250px) {
+	#wrap {width:100%; min-width:100%; overflow: hidden;}
+	#inner_wrap {margin-left:-505px;}
+	#main_left {width:690px; padding-right:0px; margin-left:0px;}
+	#main_left h1 {font-size:26px;}
+	#main_left h2 {font-size:16px;}
+}
+
+@media (max-width:1040px) {
+	#inner_wrap {width:400px; height:600px; margin:auto; left:50%; margin-left:-200px; margin-top:-270px;}
+	#main_left {display:none;}
+	.right_bottom  {margin:20px auto;}
+	.mobileinfo {display:block;}
+} 
+
+@media (max-width:1040px) and (max-height:610px){
+	.kakao {display:none; height:0px;}
+	#inner_wrap {margin-top:-270px;}
+}
+
+@media (max-width:1040px) and (max-height:580px){
+	.discord {display:none; height:0px;}
+	.mobileinfo {bottom:10px;}
+	#inner_wrap {margin-top:-250px;}
+}
+
+@media (max-width:1040px) and (max-height:480px){
+	.right_top img {display:none;}
+	.form_input {margin-top:20px;}
+	.right_top {height:100px;}
+	.right_bottom {margin:15px auto;}
+	#inner_wrap {margin-top:-155px;}
+}
+
+@media (max-width:1040px) and (max-height:330px){
+	.mobileinfo {display:none; height:0px;}
+	#inner_wrap {margin-top:-135px;}
+}

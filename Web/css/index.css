@@ -1,0 +1,142 @@
+/* --- wrap ---*/
+* {margin:0; padding:0; box-sizing: border-box;}
+
+body {position: relative; overflow-y: hidden;}
+
+#wrap {
+	width:100%;
+	min-width:1200px;
+	height:100vh;
+	background:url(../images/background.png) center center;
+	background-size:cover;
+	position: relative;
+	overflow: hidden;
+	}
+@font-face{
+	font-family:'nanumB';
+	font-style:normal;
+	src:local(NanumSquareB),
+		url(../font/NanumSquare_acB.eot) format('embedded-opentype'),
+		url(../font/NanumSquare_acB.woff) format('woff'),
+		url(../font/NanumSquare_acB.ttf) format('truetype');
+	}
+@font-face{
+	font-family:'nanumR';
+	font-style:normal;
+	src:local(NanumSquareR),
+		url(../font/NanumSquare_acR.eot) format('embedded-opentype'),
+		url(../font/NanumSquare_acR.woff) format('woff'),
+		url(../font/NanumSquare_acR.ttf) format('truetype');
+	}
+@font-face{
+	font-family:'nanumL';
+	font-style:normal;
+	src:local(NanumSquareL),
+		url(../font/NanumSquare_acL.eot) format('embedded-opentype'),
+		url(../font/NanumSquare_acL.woff) format('woff'),
+		url(../font/NanumSquare_acL.ttf) format('truetype');
+	}
+	
+@font-face{
+	font-family:'nanumEB';
+	font-style:normal;
+	src:local(NanumSquareEB),
+		url(../font/NanumSquare_acEB.eot) format('embedded-opentype'),
+		url(../font/NanumSquare_acEB.woff) format('woff'),
+		url(../font/NanumSquare_acEB.ttf) format('truetype');
+	}
+/* --- innder_wrap ---*/
+#inner_wrap {width:1300px; margin:auto; position: absolute; top:50%; margin-top:-235px; left:50%; margin-left:-610px;}
+
+/* --- main_left ---*/
+#main_left {width:900px; height:500px; float:left; font-family: "nanumL"; padding-right:120px; padding-top:68px; color:white;}
+#main_left h3 {color:#e8ba3f; margin-bottom:10px; font-size:36px; font-family: "nanumB";}
+#main_left h3 span {color:#d6d6d6; font-family: "nanumR"; font-size:28px;}
+#main_left h4 {margin-bottom:60px; font-size:14px;}
+#main_left h1 {margin-bottom:40px; font-size:27px; word-break:break-all;}
+#main_left h1 span {font-weight: bold;}
+#main_left h2 {line-height: 30px; font-size:17px;}
+#main_left h2 span {background-color:#ffffff; color:#444444; font-weight: bold; padding:3px 0px 3px 0px;}
+
+/* --- main_right ---*/
+#main_right {width:400px; height:600px; overflow: hidden; color:white;}
+.right_top {width:400px; height:200px;}
+.right_top dt {font-size:30px; font-family: "nanumL"; text-align: center; }
+.right_top dd:first-of-type {font-size:40px; font-family: "nanumEB"; text-align: center; height:40px;}
+.right_top dd:last-of-type h1 {color:#e8ba3f; text-align: center; margin-top:20px; font-size:16px; font-family: "nanumR"; line-height: 22px;}
+
+.form_div {text-align: center;}
+.form_input {transform: skew(-0.05deg); margin:auto; margin-top:85px; font-family:"nanumR"; font-size:16px;}
+.form_input dt {width:240px; height:45px; margin:auto; margin-bottom:10px;}
+.form_input dd {width:240px; height:45px; margin:auto;}
+.form_input input {width:240px; height:45px; border-radius:50px; border:0px; padding-left:48px; padding-right:20px; font-size:12px; font-family:"nanumB"; color:#000000; letter-spacing:1px; background-size:20px; background-repeat:no-repeat; background-position: 20px center; transform: skew(-0.10deg);}
+.form_input input::placeholder {font-family: "nanumB"; color:#b2b2b2; letter-spacing: 1px;}
+.form_input input:-ms-input-placeholder {font-family: "nanumB"; color:#b2b2b2; letter-spacing: 1px;}
+.name_input {background-image: url(../images/nameicon.png);}
+.mail_input {background-image: url(../images/emailicon.png);}
+
+.right_bottom {transform: skew(-0.05deg); width:240px; overflow: hidden; margin:40px auto;}
+.right_bottom input {background-color: transparent; border: none; width:120px; height:40px; overflow:hidden; text-align: center; font-size:16px; cursor: pointer; font-family: "nanumB"; letter-spacing: 1px; }
+.right_bottom dt {width:120px; height:50px; overflow:hidden; float:left;}
+.right_bottom dt:after {content:""; width:0; height:1px; border-bottom:2px solid #e8ba3f; transition: 0.4s; display: block; clear: both; margin:20px auto;}
+.right_bottom dt:hover:after {width:60%;}
+.right_bottom dd {width:120px; height:50px; float:right; overflow: hidden;}
+.right_bottom dd:after {content:""; width:0; height:1px; border-bottom:2px solid #d6d6d6; transition: 0.4s; display: block; clear: both; margin:20px auto;}
+.right_bottom dd:hover:after {width:60%;}
+.first_input {float:left; color:#e8ba3f;}
+.second_input {float:right; color:#d6d6d6;}
+
+.content_first {margin:auto; margin-top:70px; font-size:16px; font-family:"nanumR"; color:#ffffff;} 
+
+input:focus {outline:none;}
+
+.kakao {text-align: center; width:60px; height:80px; overflow: hidden; position: absolute; bottom:30px; right:30px; cursor: pointer;}
+.kakao dt {background-image:url(../images/kakao_icon.png); height:50px; background-size:50px; background-repeat:no-repeat; background-position: 5px center;}
+.kakao dd {color:#d6d6d6; font-family:"nanumR"; font-size:14px; margin-top:10px;}
+.kakao:hover dd {text-decoration:underline;}
+
+/* --- footer ---*/
+.discord {width:570px; height:71px; overflow: hidden; position: absolute; bottom:15px; left:50%; margin-left:-285px;}
+.discord div {background-image:url(../images/discord_pc.png); height:71px; background-size:570px; background-repeat:no-repeat; cursor: pointer;}
+
+.morepop {z-index:999; transform: skew(-0.05deg); font-family:"nanumR"; width:350px; height:500px; margin:auto; position: absolute; left:50%; bottom:50%; margin-bottom:-2000px; margin-left:-175px; display: none; background-image: url(../images/morebg.png); background-size:cover;}
+.moretitle {height:50px; margin:60px; text-align: center; font-size:22px; line-height:28px; margin-bottom:40px; letter-spacing: 1px;}
+.moretitle span {font-family: "nanumB";}
+.morecontent {overflow:auto; height:230px; margin:40px 42px 30px 58px; line-height:20px; font-size:14px; letter-spacing: 1px;}
+.moreButtom {cursor: pointer; line-height:38px; text-align: center; width:100px; height:40px; border-radius:50px; border:1px solid #444444; margin:30px 125px 60px 125px; font-size:14px; color:#000000;}
+
+.mobileinfo {text-align: center; width:100%; height:40px; overflow: hidden; position: absolute; bottom:65px; display:none;}
+.mobileinfo p {line-height:18px; font-size:14px; transform: skew(-0.05deg); color:#e8ba3f; font-family: "nanumB";}
+.mobileinfo span {color:#d6d6d6; font-family: "nanumR";}
+.mobileinfo b {font-size:12px; color:#d6d6d6; font-family: "nanumL";}
+
+@media (max-width:1040px) {
+	.discord {width:500px; height:62px; margin-left:-250px; bottom:0px;}
+	.discord div {background-image:url(../images/discord_mobile.png); height:62px; background-size:500px;}
+	.mobileinfo {bottom:65px;}
+} 
+
+@media (max-width:670px){
+	.kakao {width:100px; height:26px; bottom:110px; right:50%; margin-right:-50px;}
+	.mobileinfo {bottom:65px;}
+	.kakao dd {display:none; height:0px;}
+	.kakao dt {background-image:url(../images/mobile_kakao.png); width:100px; height:26px; background-size:100px; background-position: 0px center;}
+}
+
+@media (max-width:500px) {
+	.kakao {bottom:105px;}
+	.mobileinfo {bottom:60px;}
+	.discord {width:100%; left:0; margin-left:0;}
+	.discord div {background:url(../images/discord_mobile.png) center bottom; background-repeat:no-repeat; background-size:100%;}
+} 
+
+@media (max-width:400px) {
+	.kakao {bottom:95px;}
+	.mobileinfo {bottom:50px;}
+} 
+
+@media (max-width:300px) {
+	.kakao {bottom:85px;}
+	.mobileinfo {bottom:40px;}
+}
+
