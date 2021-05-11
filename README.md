@@ -9,14 +9,16 @@
 + 웹, 어플 개발: Jiwon Lee
 + 디자이너: Junjae Won
 
-### 웹 페이지
-#### 사용
+### 개발 기간
++ 2020년 5월 ~ 2020년 6월
+
+### 사용
+#### 웹 페이지
 + PHP 7.4.3
 + Jquery 3.4.1
 + MySQL
 
-### 안드로이드 어플리케이션
-#### 사용
+#### 안드로이드 어플리케이션
 + Android Studio
 + Android Q (10, API Level 29)
 + Java
