@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.keysales.myapplication.ui.main.GamekeyActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:fontFamily="@font/nanumsquarel"
+        android:title="게임 키 추가"
+        android:icon="@drawable/menuicon"
+        app:showAsAction="always" />
+</menu>

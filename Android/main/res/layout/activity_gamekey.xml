@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/gamekey_activity"
+    android:orientation="vertical"
+    android:fontFamily="@font/nanumsquarer"
+    tools:context=".ui.main.GamekeyActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewkey1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquarel"
+            android:paddingLeft="50dp"
+            android:text="현재"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewkey21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareeb"
+                android:paddingLeft="50dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textViewkey22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquarel"
+                android:text=" 개의 "
+                android:textColor="#FFFFFF"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textViewkey23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareeb"
+                android:text="게임키"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textViewkey24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquarel"
+                android:text="가"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewkey3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquarel"
+            android:paddingLeft="50dp"
+            android:text="남아있습니다."
+            android:textColor="#FFFFFF"
+            android:textSize="26dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/textnum"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/nanumsquareb"
+            android:gravity="center|right"
+            android:text="번호"
+            android:textAlignment="center"
+            android:textColor="#a0a0a0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textgame"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/nanumsquareb"
+            android:gravity="center|right"
+            android:text="게임 키"
+            android:textAlignment="center"
+            android:textColor="#a0a0a0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textused"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/nanumsquareb"
+            android:gravity="center|right"
+            android:text="사용 여부"
+            android:textAlignment="center"
+            android:textColor="#a0a0a0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/texttime"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/nanumsquareb"
+            android:gravity="center|right"
+            android:text="사용 시간"
+            android:textAlignment="center"
+            android:textColor="#a0a0a0"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listviewgamekey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#eaeaea"
+            android:dividerHeight="1dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_activty"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/nanumsquarel"
+            android:paddingLeft="50dp"
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="금일"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/nanumsquareeb"
+                android:paddingLeft="50dp"
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="26dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="@font/nanumsquarel"
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 건의 "
+                android:textSize="26dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="@font/nanumsquareeb"
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주문내역"
+                android:textSize="26dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:fontFamily="@font/nanumsquarel"
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이"
+                android:textSize="26dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/nanumsquarel"
+            android:paddingLeft="50dp"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="있습니다."
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:tabRippleColor="@null"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="130dp"
+            app:tabMinWidth="130dp"
+            app:tabPaddingStart="10dp"
+            app:tabPaddingEnd="10dp"
+            android:background="@drawable/tab_layout_background"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabTextColor="#ffffff"
+            app:tabSelectedTextColor="#00c6f5">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_Item1"
+                android:fontFamily="@font/nanumsquarel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="신청 내역" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_Item2"
+                android:fontFamily="@font/nanumsquarel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전송 내역" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

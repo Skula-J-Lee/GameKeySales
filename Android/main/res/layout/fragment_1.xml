@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fontFamily="@font/nanumsquarer"
+    tools:context=".ui.main.Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:fontFamily="@font/nanumsquareb"
+            android:id="@+id/textnum"
+            android:textColor="#a0a0a0"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="번호"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="#a0a0a0"
+            android:fontFamily="@font/nanumsquareb"
+            android:id="@+id/textname"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="2"
+            android:gravity="center|right"
+            android:text="이름"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="#a0a0a0"
+            android:fontFamily="@font/nanumsquareb"
+            android:id="@+id/textemail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:gravity="center|right"
+            android:text="이메일"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textColor="#a0a0a0"
+            android:fontFamily="@font/nanumsquareb"
+            android:id="@+id/textprocess"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            android:gravity="center|right"
+            android:text="처리 현황"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ListView
+            android:id="@+id/listviewitem"
+            android:dividerHeight="1dp"
+            android:divider="#eaeaea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

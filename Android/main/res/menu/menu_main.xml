@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.keysales.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:fontFamily="@font/nanumsquarel"
+        android:icon="@drawable/menuicon"
+        android:orderInCategory="100"
+        android:title="설정"
+        app:showAsAction="always" />
+
+</menu>
